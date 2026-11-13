@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooming Services & Pricing | MEN'S SALOON</title>
+  <meta name="description" content="Explore complete men's grooming services at MEN'S SALOON. Haircuts, beard styling, hair care treatments, coloring, and facial care with illustrative INR pricing.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo-text" aria-label="MEN'S SALOON Homepage">
+          MEN'S <span>SALOON</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="haircuts.html" class="nav-link">Haircuts</a></li>
+            <li><a href="beard-grooming.html" class="nav-link">Beard Grooming</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="section-tag no-dash">Comprehensive Service Menu</span>
+        <h1>Men's Grooming Services</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Services</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview & Interactive Filters -->
+    <section class="section-padding bg-black">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <span class="section-tag no-dash">Curated For Gentlemen</span>
+          <h2 class="section-title">Explore All Services</h2>
+          <p class="section-subtitle">
+            Select a category filter below to browse our haircut, beard, hair therapy, coloring, and facial treatments.
+            <span class="demo-disclaimer">* All prices listed in INR (₹) are illustrative demonstration prices.</span>
+          </p>
+
+          <!-- Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-service-filter="all">All Services</button>
+            <button class="filter-btn" data-service-filter="haircuts">Haircuts</button>
+            <button class="filter-btn" data-service-filter="beard">Beard Grooming</button>
+            <button class="filter-btn" data-service-filter="haircare">Hair Care</button>
+            <button class="filter-btn" data-service-filter="coloring">Hair Coloring</button>
+            <button class="filter-btn" data-service-filter="facial">Face & Personal</button>
+          </div>
+        </div>
+
+        <!-- Service Cards Grid -->
+        <div class="grid-3" id="services-grid">
+
+          <!-- ================= CATEGORY 1: HAIRCUTS ================= -->
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Classic Haircut</h3>
+                <span class="service-card-price">₹249</span>
+              </div>
+              <span class="service-card-duration">⏱ 30 Mins • Haircut Services</span>
+              <p class="service-card-desc">Standard scissor cut, side contouring, neck taper, and styling consultation.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Classic%20Haircut" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Fade Haircut</h3>
+                <span class="service-card-price">₹349</span>
+              </div>
+              <span class="service-card-duration">⏱ 40 Mins • Haircut Services</span>
+              <p class="service-card-desc">Precision skin, drop, or mid fade with razor-smooth transition and top texturizing.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Fade%20Haircut" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Taper Haircut</h3>
+                <span class="service-card-price">₹299</span>
+              </div>
+              <span class="service-card-duration">⏱ 35 Mins • Haircut Services</span>
+              <p class="service-card-desc">Gradual taper blending around temples and nape while retaining fullness on top.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Taper%20Haircut" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Crew Cut</h3>
+                <span class="service-card-price">₹249</span>
+              </div>
+              <span class="service-card-duration">⏱ 25 Mins • Haircut Services</span>
+              <p class="service-card-desc">Clean, athletic military-inspired cut with short sides and neat top proportion.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Crew%20Cut" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Buzz Cut</h3>
+                <span class="service-card-price">₹199</span>
+              </div>
+              <span class="service-card-duration">⏱ 20 Mins • Haircut Services</span>
+              <p class="service-card-desc">Uniform clipper length, hairline clean-up, and razor neckline outline.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Buzz%20Cut" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Textured Haircut</h3>
+                <span class="service-card-price">₹349</span>
+              </div>
+              <span class="service-card-duration">⏱ 40 Mins • Haircut Services</span>
+              <p class="service-card-desc">Point-cut texture and layered volume styling, perfect for matte clay and modern fringe.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Textured%20Crop" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Modern Haircut</h3>
+                <span class="service-card-price">₹399</span>
+              </div>
+              <span class="service-card-duration">⏱ 45 Mins • Haircut Services</span>
+              <p class="service-card-desc">Trendy disconnect undercut, modern quiff, or textured pompadour sculpted for high impact.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Pompadour" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircuts">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Hair Trimming</h3>
+                <span class="service-card-price">₹199</span>
+              </div>
+              <span class="service-card-duration">⏱ 20 Mins • Haircut Services</span>
+              <p class="service-card-desc">Quick touch-up around ears, neckline cleanup, and split-end reduction.</p>
+            </div>
+            <a href="contact.html?cat=haircuts&service=Classic%20Haircut" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <!-- ================= CATEGORY 2: BEARD GROOMING ================= -->
+          <div class="service-card reveal-on-scroll" data-service-category="beard">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Beard Trimming</h3>
+                <span class="service-card-price">₹149</span>
+              </div>
+              <span class="service-card-duration">⏱ 20 Mins • Beard Grooming</span>
+              <p class="service-card-desc">Consistent clipper trimming, neckline balancing, and stray hair cleanup.</p>
+            </div>
+            <a href="contact.html?cat=beard&service=Beard%20Trimming" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="beard">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Beard Styling</h3>
+                <span class="service-card-price">₹199</span>
+              </div>
+              <span class="service-card-duration">⏱ 25 Mins • Beard Grooming</span>
+              <p class="service-card-desc">Custom contour shaping, fade transition into sideburns, and beard balm touch.</p>
+            </div>
+            <a href="contact.html?cat=beard&service=Beard%20Styling" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="beard">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Beard Shaping</h3>
+                <span class="service-card-price">₹249</span>
+              </div>
+              <span class="service-card-duration">⏱ 30 Mins • Beard Grooming</span>
+              <p class="service-card-desc">Full sculpting for medium-to-long beards with defined cheeklines and jawline square-off.</p>
+            </div>
+            <a href="contact.html?cat=beard&service=Beard%20Shaping" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="beard">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Beard Line-Up</h3>
+                <span class="service-card-price">₹149</span>
+              </div>
+              <span class="service-card-duration">⏱ 15 Mins • Beard Grooming</span>
+              <p class="service-card-desc">Razor-sharp outlining across upper cheeks, moustache edge, and Adam's apple curve.</p>
+            </div>
+            <a href="contact.html?cat=beard&service=Beard%20Line-Up" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="beard">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Moustache Styling</h3>
+                <span class="service-card-price">₹99</span>
+              </div>
+              <span class="service-card-duration">⏱ 15 Mins • Beard Grooming</span>
+              <p class="service-card-desc">Lip-line precision trimming, handlebar curling wax, and symmetry detailing.</p>
+            </div>
+            <a href="contact.html?cat=beard&service=Moustache%20Styling" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="beard">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Clean Shave</h3>
+                <span class="service-card-price">₹149</span>
+              </div>
+              <span class="service-card-duration">⏱ 25 Mins • Beard Grooming</span>
+              <p class="service-card-desc">Classic warm-towel compress, rich shaving lather, single-blade razor, and cooling balm.</p>
+            </div>
+            <a href="contact.html?cat=beard&service=Clean%20Shave" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <!-- ================= CATEGORY 3: HAIR CARE ================= -->
+          <div class="service-card reveal-on-scroll" data-service-category="haircare">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Hair Wash</h3>
+                <span class="service-card-price">₹149</span>
+              </div>
+              <span class="service-card-duration">⏱ 15 Mins • Hair Care</span>
+              <p class="service-card-desc">Cleansing clarifying wash to remove oils, dust, and styling products, finished with light blow-dry.</p>
+            </div>
+            <a href="contact.html?cat=haircare&service=Hair%20Wash" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircare">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Hair Spa</h3>
+                <span class="service-card-price">₹799</span>
+              </div>
+              <span class="service-card-duration">⏱ 45 Mins • Hair Care</span>
+              <p class="service-card-desc">Deep scalp massage, nourishing hair mask, warm steam infusion, and frizz recovery.</p>
+            </div>
+            <a href="contact.html?cat=haircare&service=Hair%20Spa" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircare">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Hair Conditioning</h3>
+                <span class="service-card-price">₹299</span>
+              </div>
+              <span class="service-card-duration">⏱ 20 Mins • Hair Care</span>
+              <p class="service-card-desc">Intense moisture replenishment to restore hair softness and manageability.</p>
+            </div>
+            <a href="contact.html?cat=haircare&service=Hair%20Conditioning" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircare">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Scalp Care</h3>
+                <span class="service-card-price">₹699</span>
+              </div>
+              <span class="service-card-duration">⏱ 35 Mins • Hair Care</span>
+              <p class="service-card-desc">Purifying anti-dandruff and scalp cooling scrub with botanical extracts.</p>
+            </div>
+            <a href="contact.html?cat=haircare&service=Scalp%20Care" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="haircare">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Hair Repair Treatment</h3>
+                <span class="service-card-price">₹999</span>
+              </div>
+              <span class="service-card-duration">⏱ 50 Mins • Hair Care</span>
+              <p class="service-card-desc">Protein restoration treatment to strengthen brittle follicles damaged by sun or hard water.</p>
+            </div>
+            <a href="contact.html?cat=haircare&service=Hair%20Spa" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <!-- ================= CATEGORY 4: HAIR COLORING ================= -->
+          <div class="service-card reveal-on-scroll" data-service-category="coloring">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Global Hair Color</h3>
+                <span class="service-card-price">₹1,499</span>
+              </div>
+              <span class="service-card-duration">⏱ 60 Mins • Hair Coloring</span>
+              <p class="service-card-desc">Complete natural black or dark brown global coverage using ammonia-free hair dyes.</p>
+            </div>
+            <a href="contact.html?cat=color&service=Global%20Hair%20Color" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="coloring">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Grey Coverage</h3>
+                <span class="service-card-price">₹899</span>
+              </div>
+              <span class="service-card-duration">⏱ 40 Mins • Hair Coloring</span>
+              <p class="service-card-desc">Subtle grey blending around temples and sideburns for an authentic natural look.</p>
+            </div>
+            <a href="contact.html?cat=color&service=Grey%20Coverage" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="coloring">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Root Touch-Up</h3>
+                <span class="service-card-price">₹699</span>
+              </div>
+              <span class="service-card-duration">⏱ 35 Mins • Hair Coloring</span>
+              <p class="service-card-desc">Targeted color reapplication on newly emerged roots to maintain color uniformity.</p>
+            </div>
+            <a href="contact.html?cat=color&service=Root%20Touch-Up" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="coloring">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Fashion Hair Color</h3>
+                <span class="service-card-price">₹1,899</span>
+              </div>
+              <span class="service-card-duration">⏱ 75 Mins • Hair Coloring</span>
+              <p class="service-card-desc">Bleach toning and trendy shades (ash grey, mocha brown, caramel highlights).</p>
+            </div>
+            <a href="contact.html?cat=color&service=Fashion%20Hair%20Color" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <!-- ================= CATEGORY 5: FACE & PERSONAL GROOMING ================= -->
+          <div class="service-card reveal-on-scroll" data-service-category="facial">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Men's Facial</h3>
+                <span class="service-card-price">₹999</span>
+              </div>
+              <span class="service-card-duration">⏱ 45 Mins • Face & Skincare</span>
+              <p class="service-card-desc">Pore detox, blackhead extraction, rejuvenating massage, and hydration pack.</p>
+            </div>
+            <a href="contact.html?cat=facial&service=Men%27s%20Facial" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="facial">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Face Cleanup</h3>
+                <span class="service-card-price">₹499</span>
+              </div>
+              <span class="service-card-duration">⏱ 25 Mins • Face & Skincare</span>
+              <p class="service-card-desc">Deep cleansing wash, gentle exfoliating scrub, and refreshing aloe gel application.</p>
+            </div>
+            <a href="contact.html?cat=facial&service=Face%20Cleanup" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="facial">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Head Massage</h3>
+                <span class="service-card-price">₹299</span>
+              </div>
+              <span class="service-card-duration">⏱ 20 Mins • Face & Personal</span>
+              <p class="service-card-desc">Warm herbal oil treatment and pressure-point massage to boost circulation and relieve stress.</p>
+            </div>
+            <a href="contact.html?cat=facial&service=Head%20Massage" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+          <div class="service-card reveal-on-scroll" data-service-category="facial">
+            <div>
+              <div class="service-card-header">
+                <h3 class="service-card-title">Basic Grooming</h3>
+                <span class="service-card-price">₹449</span>
+              </div>
+              <span class="service-card-duration">⏱ 30 Mins • Face & Personal</span>
+              <p class="service-card-desc">Ear and nose hair trimming, eyebrow shaping, quick cleansing wash, and moisturizer.</p>
+            </div>
+            <a href="contact.html?cat=facial&service=Basic%20Grooming" class="btn btn-primary btn-sm">Book Now</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section on Services -->
+    <section class="section-padding bg-charcoal">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <span class="section-tag no-dash">Have Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Common queries regarding our appointments, services, and policies.</p>
+        </div>
+
+        <div class="faq-accordion reveal-on-scroll">
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Do I need to book in advance or do you take walk-ins?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                While we warmly welcome walk-in clients based on chair availability, we recommend reserving an appointment online or by phone to guarantee your preferred time without wait times.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Are the prices displayed on the website final?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                The prices shown on this demonstration website are illustrative starting rates. Final charges may vary depending on hair length, density, and customized package combinations.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>Can your barbers suggest a hairstyle for my face shape?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes! Every haircut appointment includes a one-on-one style consultation. Our barbers evaluate your jawline, hairline, cowlicks, and daily styling routine before making recommendations.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger" aria-expanded="false">
+              <span>What hygiene standards do you maintain?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                We enforce strict sterilization protocols. All clippers, scissors, combs, and razor handles are sanitized between clients. Fresh disposable capes and clean towels are used for every appointment.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="reveal-on-scroll">
+          <span class="section-tag no-dash">Schedule Your Grooming Session</span>
+          <h2>Ready For Exceptional Grooming?</h2>
+          <p>
+            Choose your preferred services and let our master barbers take care of the rest.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Book An Appointment Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-text" style="margin-bottom: 1rem;">
+            MEN'S <span>SALOON</span>
+          </div>
+          <p>
+            A dedicated sanctuary for men's grooming, precision haircutting, beard sculpting, and facial wellness. Delivering modern confidence through craftsmanship.
+          </p>
+          <div class="social-links">
+            <a href="contact.html" class="social-link" aria-label="Social Link Facebook">FB</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link Instagram">IG</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link YouTube">YT</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link Twitter">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="haircuts.html">Haircuts & Fades</a></li>
+            <li><a href="beard-grooming.html">Beard Grooming</a></li>
+            <li><a href="packages.html">Grooming Packages</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classic Haircut</a></li>
+            <li><a href="haircuts.html">Low & High Skin Fades</a></li>
+            <li><a href="beard-grooming.html">Razor Beard Line-Up</a></li>
+            <li><a href="beard-grooming.html">Hot Towel Shave</a></li>
+            <li><a href="services.html">Men's Facial & Cleanup</a></li>
+            <li><a href="services.html">Hair Spa & Conditioning</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Sample Main Road, Hyderabad, Telangana, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+91 90000 00000 <small>(Demo Phone)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>demo@example.com <small>(Demo Email)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">⏰</span>
+            <span>Mon – Sun: 9:00 AM – 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 MEN'S SALOON. All rights reserved. Professional Men's Grooming.
+        </div>
+        <div>
+          * Demonstration website for visual presentation. Non-commercial layout.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" aria-label="Scroll to top of page">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

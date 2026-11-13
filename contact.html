@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Appointment Booking | MEN'S SALOON</title>
+  <meta name="description" content="Book an appointment or get in touch with MEN'S SALOON. Professional men's haircuts, beard grooming, and facial wellness in Hyderabad. Frontend booking demo.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo-text" aria-label="MEN'S SALOON Homepage">
+          MEN'S <span>SALOON</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="haircuts.html" class="nav-link">Haircuts</a></li>
+            <li><a href="beard-grooming.html" class="nav-link">Beard Grooming</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="section-tag no-dash">Reach Out & Reserve</span>
+        <h1>Contact & Appointment Booking</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Contact</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content: Booking Form & Contact Details -->
+    <section class="section-padding bg-black">
+      <div class="container">
+        <div class="grid-2" style="align-items: start; gap: 3rem;">
+
+          <!-- Left Column: Appointment Booking Form -->
+          <div class="reveal-on-scroll">
+            <div class="booking-card">
+              <span class="section-tag">Appointment Enquiry</span>
+              <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Reserve Your Chair</h2>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1.75rem;">
+                Select your preferred service, date, and time.
+                <span class="demo-disclaimer">* Frontend Demonstration Booking Form. Does not transmit data or connect to a live booking engine.</span>
+              </p>
+
+              <!-- Success Alert -->
+              <div id="form-alert-success" class="form-alert success" role="alert"></div>
+              <!-- Error Alert -->
+              <div id="form-alert-error" class="form-alert error" role="alert"></div>
+
+              <form id="appointment-form" novalidate>
+                <!-- Full Name -->
+                <div class="form-group">
+                  <label for="booking-name" class="form-label">Full Name *</label>
+                  <input type="text" id="booking-name" class="form-control" placeholder="e.g. John Doe" required>
+                  <span id="name-error" class="form-error">Please enter your full name.</span>
+                </div>
+
+                <!-- Phone & Email (Row) -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="booking-phone" class="form-label">Phone Number *</label>
+                    <input type="tel" id="booking-phone" class="form-control" placeholder="e.g. +91 98765 43210" required>
+                    <span id="phone-error" class="form-error">Please enter a valid phone number.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="booking-email" class="form-label">Email Address *</label>
+                    <input type="email" id="booking-email" class="form-control" placeholder="e.g. john@example.com" required>
+                    <span id="email-error" class="form-error">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <!-- Service Category & Service (Row) -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="service-category" class="form-label">Service Category *</label>
+                    <select id="service-category" class="form-control" required>
+                      <option value="">All Categories</option>
+                      <option value="haircuts">Haircuts & Hairstyles</option>
+                      <option value="beard">Beard Grooming & Shaving</option>
+                      <option value="haircare">Hair Care & Spa</option>
+                      <option value="color">Hair Coloring</option>
+                      <option value="facial">Facial & Skincare</option>
+                      <option value="packages">Grooming Packages</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="service-name" class="form-label">Select Specific Service *</label>
+                    <select id="service-name" class="form-control" required>
+                      <option value="">Select a specific service</option>
+                      <!-- Populated dynamically based on category by JavaScript -->
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Date & Time (Row) -->
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="booking-date" class="form-label">Preferred Date *</label>
+                    <input type="date" id="booking-date" class="form-control" required>
+                    <span id="date-error" class="form-error">Please select a valid future date.</span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="booking-time" class="form-label">Preferred Time Slot *</label>
+                    <select id="booking-time" class="form-control" required>
+                      <option value="">Choose Time Slot</option>
+                      <option value="09:00 AM">09:00 AM – 10:00 AM</option>
+                      <option value="10:00 AM">10:00 AM – 11:00 AM</option>
+                      <option value="11:00 AM">11:00 AM – 12:00 PM</option>
+                      <option value="12:00 PM">12:00 PM – 01:00 PM</option>
+                      <option value="02:00 PM">02:00 PM – 03:00 PM</option>
+                      <option value="03:00 PM">03:00 PM – 04:00 PM</option>
+                      <option value="04:00 PM">04:00 PM – 05:00 PM</option>
+                      <option value="05:00 PM">05:00 PM – 06:00 PM</option>
+                      <option value="06:00 PM">06:00 PM – 07:00 PM</option>
+                      <option value="07:00 PM">07:00 PM – 08:00 PM</option>
+                      <option value="08:00 PM">08:00 PM – 09:00 PM</option>
+                    </select>
+                    <span id="time-error" class="form-error">Please select a preferred time slot.</span>
+                  </div>
+                </div>
+
+                <!-- Additional Message -->
+                <div class="form-group">
+                  <label for="booking-message" class="form-label">Special Request / Message (Optional)</label>
+                  <textarea id="booking-message" rows="3" class="form-control" placeholder="Any specific haircut style, skin sensitivities, or timing preference..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Appointment Enquiry</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Details, Hours & Map Placeholder -->
+          <div class="reveal-on-scroll">
+            <span class="section-tag">Direct Information</span>
+            <h2 class="section-title">Visit MEN'S SALOON</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: 2rem;">
+              Conveniently located with dedicated guest parking and a welcoming lounge. Walk-ins are accepted based on availability, but reserved appointments ensure zero waiting.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="font-size: 1.5rem; color: var(--color-muted-gold);">📍</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Address</h4>
+                  <p style="color: var(--color-warm-beige); margin-bottom: 0.15rem;">Sample Main Road, Hyderabad, Telangana, India</p>
+                  <span class="demo-disclaimer">* Demonstration address</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="font-size: 1.5rem; color: var(--color-muted-gold);">📞</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Phone Number</h4>
+                  <p style="color: var(--color-warm-beige); margin-bottom: 0.15rem;">+91 90000 00000</p>
+                  <span class="demo-disclaimer">* Demonstration contact</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="font-size: 1.5rem; color: var(--color-muted-gold);">✉️</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Email Address</h4>
+                  <p style="color: var(--color-warm-beige); margin-bottom: 0.15rem;">demo@example.com</p>
+                  <span class="demo-disclaimer">* Demonstration email</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="font-size: 1.5rem; color: var(--color-muted-gold);">⏰</div>
+                <div>
+                  <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem;">Salon Hours</h4>
+                  <p style="color: var(--color-warm-beige); margin-bottom: 0.15rem;">Monday – Sunday: 9:00 AM – 9:00 PM</p>
+                  <small style="color: var(--color-text-muted);">Open 7 days a week including public holidays</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- CSS Map Placeholder -->
+            <div class="map-placeholder" role="img" aria-label="Interactive Map Location Placeholder">
+              <div class="map-icon">🗺️</div>
+              <h3 style="font-size: 1.2rem; color: var(--color-off-white); margin-bottom: 0.35rem;">MEN'S SALOON LOCATION MAP</h3>
+              <p style="font-size: 0.85rem; color: var(--color-text-muted); max-width: 320px; margin-bottom: 1rem;">
+                Sample Main Road, Hyderabad, Telangana, India
+              </p>
+              <span class="btn btn-outline-gold btn-sm" style="pointer-events: none;">CSS Map Simulation</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Demonstration Links -->
+    <section class="section-padding bg-charcoal" style="padding: 3.5rem 0;">
+      <div class="container text-center reveal-on-scroll">
+        <span class="section-tag no-dash">Stay Connected</span>
+        <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Follow MEN'S SALOON</h2>
+        <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+          Connect with us across social media for haircut tutorials, styling inspirations, and grooming advice.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem;">
+          <a href="contact.html" class="btn btn-secondary btn-sm">Facebook</a>
+          <a href="contact.html" class="btn btn-secondary btn-sm">Instagram</a>
+          <a href="contact.html" class="btn btn-secondary btn-sm">YouTube</a>
+          <a href="contact.html" class="btn btn-secondary btn-sm">Twitter / X</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-text" style="margin-bottom: 1rem;">
+            MEN'S <span>SALOON</span>
+          </div>
+          <p>
+            A dedicated sanctuary for men's grooming, precision haircutting, beard sculpting, and facial wellness. Delivering modern confidence through craftsmanship.
+          </p>
+          <div class="social-links">
+            <a href="contact.html" class="social-link" aria-label="Social Link Facebook">FB</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link Instagram">IG</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link YouTube">YT</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link Twitter">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="haircuts.html">Haircuts & Fades</a></li>
+            <li><a href="beard-grooming.html">Beard Grooming</a></li>
+            <li><a href="packages.html">Grooming Packages</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classic Haircut</a></li>
+            <li><a href="haircuts.html">Low & High Skin Fades</a></li>
+            <li><a href="beard-grooming.html">Razor Beard Line-Up</a></li>
+            <li><a href="beard-grooming.html">Hot Towel Shave</a></li>
+            <li><a href="services.html">Men's Facial & Cleanup</a></li>
+            <li><a href="services.html">Hair Spa & Conditioning</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Sample Main Road, Hyderabad, Telangana, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+91 90000 00000 <small>(Demo Phone)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>demo@example.com <small>(Demo Email)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">⏰</span>
+            <span>Mon – Sun: 9:00 AM – 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 MEN'S SALOON. All rights reserved. Professional Men's Grooming.
+        </div>
+        <div>
+          * Demonstration website for visual presentation. Non-commercial layout.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" aria-label="Scroll to top of page">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

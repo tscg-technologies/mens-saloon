@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooming & Haircut Gallery | MEN'S SALOON</title>
+  <meta name="description" content="View our men's haircuts, beard styling, facial care, and salon environment gallery at MEN'S SALOON. Responsive gallery with category filter and lightbox.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo-text" aria-label="MEN'S SALOON Homepage">
+          MEN'S <span>SALOON</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="haircuts.html" class="nav-link">Haircuts</a></li>
+            <li><a href="beard-grooming.html" class="nav-link">Beard Grooming</a></li>
+            <li><a href="packages.html" class="nav-link">Packages</a></li>
+            <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="btn btn-primary btn-sm">Book Appointment</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Banner -->
+    <section class="page-banner">
+      <div class="container">
+        <span class="section-tag no-dash">Visual Lookbook</span>
+        <h1>Grooming & Haircut Gallery</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-padding bg-black">
+      <div class="container">
+        <div class="text-center reveal-on-scroll">
+          <span class="section-tag no-dash">Our Craft in Focus</span>
+          <h2 class="section-title">Explore Our Styling Portfolio</h2>
+          <p class="section-subtitle">
+            Browse through our curated collection of men's haircuts, beard contouring, coloring, skin treatments, and salon aesthetics. Click any card to expand in full lightbox view.
+          </p>
+
+          <!-- Gallery Filters -->
+          <div class="filter-tabs">
+            <button class="filter-btn active" data-gallery-filter="all">All Styles</button>
+            <button class="filter-btn" data-gallery-filter="haircuts">Haircuts & Fades</button>
+            <button class="filter-btn" data-gallery-filter="beard">Beard Grooming</button>
+            <button class="filter-btn" data-gallery-filter="styling">Hair & Color</button>
+            <button class="filter-btn" data-gallery-filter="interior">Salon & Wellness</button>
+          </div>
+        </div>
+
+        <!-- Gallery Grid (Strictly reusing the 8 approved image placeholders) -->
+        <div class="gallery-grid" id="main-gallery-grid">
+
+          <!-- 1. Hero / Main Saloon Interior -->
+          <div class="gallery-item reveal-on-scroll" data-category="interior" tabindex="0" role="button" aria-label="Open Lightbox: MEN'S SALOON Hero Interior">
+            <!-- PLACEHOLDER: mens-salon-hero-placeholder -->
+            <div class="image-placeholder mens-salon-hero-placeholder">
+              <span>MEN'S SALOON HERO IMAGE</span>
+              <small>Barbershop chairs & styling mirrors</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Salon Ambience</span>
+              <h3 class="gallery-overlay-title">Main Barber Stations</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 2. Haircut Placeholder: Modern Haircut -->
+          <div class="gallery-item reveal-on-scroll" data-category="haircuts" tabindex="0" role="button" aria-label="Open Lightbox: Low Fade & Textured Haircut">
+            <!-- PLACEHOLDER: mens-haircut-placeholder -->
+            <div class="image-placeholder mens-haircut-placeholder">
+              <span>MENS HAIRCUT</span>
+              <small>Low fade with textured top finish</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Haircut Craft</span>
+              <h3 class="gallery-overlay-title">Low Fade & Textured Top</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 3. Beard Grooming Placeholder: Beard Shaping -->
+          <div class="gallery-item reveal-on-scroll" data-category="beard" tabindex="0" role="button" aria-label="Open Lightbox: Precision Beard Sculpting">
+            <!-- PLACEHOLDER: beard-grooming-placeholder -->
+            <div class="image-placeholder beard-grooming-placeholder">
+              <span>BEARD GROOMING</span>
+              <small>Sharp razor outline & beard trimming</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Beard Styling</span>
+              <h3 class="gallery-overlay-title">Precision Beard Sculpting</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 4. Hair Styling Placeholder: Pompadour & Volume -->
+          <div class="gallery-item reveal-on-scroll" data-category="styling" tabindex="0" role="button" aria-label="Open Lightbox: Modern Pompadour Styling">
+            <!-- PLACEHOLDER: hair-styling-placeholder -->
+            <div class="image-placeholder hair-styling-placeholder">
+              <span>HAIR STYLING</span>
+              <small>Volume blow-dry & texture clay finish</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Hair Styling</span>
+              <h3 class="gallery-overlay-title">Modern Pompadour Finish</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 5. Hair Color Placeholder: Grey Coverage -->
+          <div class="gallery-item reveal-on-scroll" data-category="styling" tabindex="0" role="button" aria-label="Open Lightbox: Natural Men's Hair Color">
+            <!-- PLACEHOLDER: hair-color-placeholder -->
+            <div class="image-placeholder hair-color-placeholder">
+              <span>HAIR COLOR</span>
+              <small>Natural grey coverage & dark tone treatment</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Color Treatment</span>
+              <h3 class="gallery-overlay-title">Natural Grey Blending</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 6. Men's Facial Placeholder: Skin Rejuvenation -->
+          <div class="gallery-item reveal-on-scroll" data-category="interior" tabindex="0" role="button" aria-label="Open Lightbox: Men's Facial Treatment">
+            <!-- PLACEHOLDER: mens-facial-placeholder -->
+            <div class="image-placeholder mens-facial-placeholder">
+              <span>MENS FACIAL</span>
+              <small>Detox steam facial & exfoliation therapy</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Skincare</span>
+              <h3 class="gallery-overlay-title">Deep Pore Facial Care</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 7. Men's Grooming Placeholder: Professional Tools -->
+          <div class="gallery-item reveal-on-scroll" data-category="interior" tabindex="0" role="button" aria-label="Open Lightbox: Barbering Tools & Care">
+            <!-- PLACEHOLDER: mens-grooming-placeholder -->
+            <div class="image-placeholder mens-grooming-placeholder">
+              <span>MENS GROOMING</span>
+              <small>Precision shears, straight razor & grooming balms</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Barbering Tools</span>
+              <h3 class="gallery-overlay-title">Professional Tool Station</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 8. Barbershop Interior Placeholder: Reception & Lounge -->
+          <div class="gallery-item reveal-on-scroll" data-category="interior" tabindex="0" role="button" aria-label="Open Lightbox: Reception & Lounge Atmosphere">
+            <!-- PLACEHOLDER: barbershop-interior-placeholder -->
+            <div class="image-placeholder barbershop-interior-placeholder">
+              <span>BARBERSHOP INTERIOR</span>
+              <small>Warm lounge and reception area</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Salon Ambience</span>
+              <h3 class="gallery-overlay-title">Lounge & Client Reception</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 9. Repeated Approved Placeholder: Haircut Crop -->
+          <div class="gallery-item reveal-on-scroll" data-category="haircuts" tabindex="0" role="button" aria-label="Open Lightbox: Textured Crop & Taper">
+            <!-- PLACEHOLDER: mens-haircut-placeholder -->
+            <div class="image-placeholder mens-haircut-placeholder">
+              <span>MENS HAIRCUT</span>
+              <small>Textured crop paired with clean temple taper</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Haircut Craft</span>
+              <h3 class="gallery-overlay-title">Textured Crop & Taper</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 10. Repeated Approved Placeholder: Beard Detailing -->
+          <div class="gallery-item reveal-on-scroll" data-category="beard" tabindex="0" role="button" aria-label="Open Lightbox: Clean Shave & Moustache Trim">
+            <!-- PLACEHOLDER: beard-grooming-placeholder -->
+            <div class="image-placeholder beard-grooming-placeholder">
+              <span>BEARD GROOMING</span>
+              <small>Hot towel shave & crisp cheekline</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Beard Styling</span>
+              <h3 class="gallery-overlay-title">Hot Towel Razor Detailing</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 11. Repeated Approved Placeholder: Quiff Styling -->
+          <div class="gallery-item reveal-on-scroll" data-category="styling" tabindex="0" role="button" aria-label="Open Lightbox: Modern Quiff Blow-Dry">
+            <!-- PLACEHOLDER: hair-styling-placeholder -->
+            <div class="image-placeholder hair-styling-placeholder">
+              <span>HAIR STYLING</span>
+              <small>Textured matte quiff with directional hold</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Hair Styling</span>
+              <h3 class="gallery-overlay-title">Textured Quiff Blowout</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+          <!-- 12. Repeated Approved Placeholder: Barber Station Close-up -->
+          <div class="gallery-item reveal-on-scroll" data-category="interior" tabindex="0" role="button" aria-label="Open Lightbox: Classic Barber Mirror & Chair">
+            <!-- PLACEHOLDER: barbershop-interior-placeholder -->
+            <div class="image-placeholder barbershop-interior-placeholder">
+              <span>BARBERSHOP INTERIOR</span>
+              <small>Leather styling chair & vintage mirror</small>
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-overlay-cat">Salon Ambience</span>
+              <h3 class="gallery-overlay-title">Private Styling Mirror</h3>
+              <span class="btn btn-outline-gold btn-sm" style="margin-top: 0.5rem;">Click to View</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal Component -->
+    <div class="lightbox-modal" id="gallery-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-caption">
+      <div class="lightbox-content">
+        <button class="lightbox-close-btn" aria-label="Close Lightbox Modal">&times;</button>
+        <div class="lightbox-body" id="lightbox-placeholder-container">
+          <!-- Active image placeholder cloned here by JavaScript -->
+        </div>
+        <div class="lightbox-caption" id="lightbox-caption">Gallery Image</div>
+        <div style="margin-top: 1.25rem;">
+          <a href="contact.html" class="btn btn-primary btn-sm">Book This Style</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="reveal-on-scroll">
+          <span class="section-tag no-dash">Inspired By Our Lookbook?</span>
+          <h2>Bring Your Inspiration To Your Appointment</h2>
+          <p>
+            Whether it's a tight skin fade or custom beard shaping, our master barbers are ready.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-text" style="margin-bottom: 1rem;">
+            MEN'S <span>SALOON</span>
+          </div>
+          <p>
+            A dedicated sanctuary for men's grooming, precision haircutting, beard sculpting, and facial wellness. Delivering modern confidence through craftsmanship.
+          </p>
+          <div class="social-links">
+            <a href="contact.html" class="social-link" aria-label="Social Link Facebook">FB</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link Instagram">IG</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link YouTube">YT</a>
+            <a href="contact.html" class="social-link" aria-label="Social Link Twitter">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="haircuts.html">Haircuts & Fades</a></li>
+            <li><a href="beard-grooming.html">Beard Grooming</a></li>
+            <li><a href="packages.html">Grooming Packages</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Popular Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classic Haircut</a></li>
+            <li><a href="haircuts.html">Low & High Skin Fades</a></li>
+            <li><a href="beard-grooming.html">Razor Beard Line-Up</a></li>
+            <li><a href="beard-grooming.html">Hot Towel Shave</a></li>
+            <li><a href="services.html">Men's Facial & Cleanup</a></li>
+            <li><a href="services.html">Hair Spa & Conditioning</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <div class="footer-contact-item">
+            <span class="icon">📍</span>
+            <span>Sample Main Road, Hyderabad, Telangana, India</span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">📞</span>
+            <span>+91 90000 00000 <small>(Demo Phone)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">✉️</span>
+            <span>demo@example.com <small>(Demo Email)</small></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon">⏰</span>
+            <span>Mon – Sun: 9:00 AM – 9:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 MEN'S SALOON. All rights reserved. Professional Men's Grooming.
+        </div>
+        <div>
+          * Demonstration website for visual presentation. Non-commercial layout.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top-btn" aria-label="Scroll to top of page">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
